@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="Container" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="WeaponList" style="width: 30%; flex-grow: 1; flex-shrink: 1; flex-direction: column; align-items: stretch;">
+            <ui:VisualElement name="Header" style="flex-direction: row; align-items: center; justify-content: space-between;">
+                <ui:Label text="WeaponList" display-tooltip-when-elided="true" style="height: auto; font-size: 20px; justify-content: flex-start; align-items: stretch; -unity-font-style: bold;" />
+                <ui:Button text="刷新" display-tooltip-when-elided="true" name="UpdateButton" style="justify-content: center; height: 20px; width: 37px; align-items: center; margin-right: -105px;" />
+                <ui:Button text="+" display-tooltip-when-elided="true" name="AddButton" style="justify-content: center; height: 20px; width: 20px; align-items: center;" />
+            </ui:VisualElement>
+            <ui:ListView focusable="true" reorderable="true" name="ListView" show-border="true" fixed-item-height="50" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:ScrollView name="WeaponDetails" style="width: 70%; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; align-items: center; justify-content: space-around;">
+            <ui:VisualElement name="Header" style="flex-direction: row; align-items: center; justify-content: space-between;">
+                <ui:Label text="Details Information" display-tooltip-when-elided="true" style="height: auto; font-size: 20px; justify-content: flex-start; align-items: stretch; -unity-font-style: bold;" />
+                <ui:Button text="-" display-tooltip-when-elided="true" name="DeleteButton" style="justify-content: center; height: 20px; width: 20px; align-items: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" style="-unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0;">
+                <ui:VisualElement name="Row1" style="-unity-text-outline-width: 0; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
+                    <ui:Label text="General" display-tooltip-when-elided="true" style="background-color: rgba(0, 0, 0, 0.35); padding-left: 5px; padding-top: 2px; padding-bottom: 2px;" />
+                    <ui:VisualElement name="Container" style="flex-direction: row; align-items: center; justify-content: flex-start; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Icon" style="background-image: url(&quot;project://database/Assets/M%20Studio/Art/Items/Icons/icon_M.png?fileID=2800000&amp;guid=ef065fb65f97e43f8b673d7718f87178&amp;type=3#icon_M&quot;); width: 80px; height: 80px; margin-left: 5px; margin-top: 5px; margin-bottom: 5px; margin-right: 5px;" />
+                        <ui:VisualElement name="Gerneral" style="flex-grow: 1; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
+                            <uie:IntegerField label="ID" value="42" name="WeaponID" />
+                            <ui:TextField picking-mode="Ignore" label="Name" value="filler text" name="WeaponName" multiline="true" />
+                            <uie:EnumField label="Class" value="Center" name="WeaponClass" />
+                            <ui:TextField picking-mode="Ignore" label="Harm" value="filler text" name="WeaponHarm" multiline="true" />
+                            <uie:ObjectField label="Icon" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="ItemIcon" />
+                            <uie:ObjectField label="OnWorld Sprite" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="ItemOnWorldSprite" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

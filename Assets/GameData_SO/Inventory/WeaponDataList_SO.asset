@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10fdb4d1bb3eef74b8673a0073a3bc63, type: 3}
+  m_Name: WeaponDataList_SO
+  m_EditorClassIdentifier: 
+  weaponDetailsLists:
+  - ID: 2001
+    Name: "\u957F\u5251"
+    Class: 0
+    Harm: 2
+    Icon: {fileID: 21300000, guid: ef065fb65f97e43f8b673d7718f87178, type: 3}
+    OnWorldSprite: {fileID: 21300000, guid: ef065fb65f97e43f8b673d7718f87178, type: 3}
+  - ID: 2002
+    Name: "\u957F\u77DB"
+    Class: 0
+    Harm: 1
+    Icon: {fileID: 21300000, guid: ef065fb65f97e43f8b673d7718f87178, type: 3}
+    OnWorldSprite: {fileID: 21300000, guid: ef065fb65f97e43f8b673d7718f87178, type: 3}
+  - ID: 2003
+    Name: "\u5F13\u7BAD"
+    Class: 1
+    Harm: 1
+    Icon: {fileID: 21300000, guid: ef065fb65f97e43f8b673d7718f87178, type: 3}
+    OnWorldSprite: {fileID: 21300000, guid: ef065fb65f97e43f8b673d7718f87178, type: 3}

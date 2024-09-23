@@ -1,0 +1,15 @@
+{
+  "1001": {
+    "itemID": 1001,
+    "itemName": "斧头",
+    "itemType": "SEED",
+    "itemDescription": "一把斧头",
+    "itemUseRadius": 1,
+    "itemWeight": 2,
+    "canPickedup": true,
+    "canDroppend": true,
+    "canCarried": true,
+    "itemPrice": 1,
+    "sellPercentage": 0.2
+  }
+}

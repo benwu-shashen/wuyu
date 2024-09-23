@@ -1,0 +1,20 @@
+{
+  "2001": {
+    "TID": 2001,
+    "Name": "长剑",
+    "Class": "COMBAT",
+    "Harm": 2
+  },
+  "2002": {
+    "TID": 2002,
+    "Name": "长矛",
+    "Class": "COMBAT",
+    "Harm": 1
+  },
+  "2003": {
+    "TID": 2003,
+    "Name": "弓箭",
+    "Class": "REMOTE",
+    "Harm": 1
+  }
+}
