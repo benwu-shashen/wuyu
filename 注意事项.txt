@@ -1,0 +1,2 @@
+1.要去包管理器安装Cinemachine，InputSystem
+2.Newtonsoft.Json的问题，则是在包管理器里，选择url进行添加com.unity.nuget.newtonsoft-json
